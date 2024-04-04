@@ -1,21 +1,14 @@
 package com.example.demo.controller;
 
-import com.example.demo.entity.Student;
-import com.example.demo.service.StudentService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/student")
+@RequestMapping()
 public class StudentController {
-    @Autowired
-    private StudentService service;
-    @GetMapping
-    public Student get(String id){
-        Student stu = service.getStu(id);
+    public String[] s = new String[]{"星期一买枪","星期二买头套","星期三偷车","星期四抢银行"};
+    @GetMapping("")
+    public String get(){
 
-        return stu;
+        return "hello";
     }
 }

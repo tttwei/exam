@@ -1,6 +1,5 @@
 package com.example.demo.mapper;
 
-import com.example.demo.entity.Student;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
